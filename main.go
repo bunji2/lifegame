@@ -20,7 +20,7 @@ func main() {
 
 func run() int {
 	if len(os.Args) < 2 {
-		fmt.Fprintln(os.Stderr, "Usage: %s image_file\n", os.Args[0])
+		fmt.Fprintf(os.Stderr, "Usage: %s image_file\n", os.Args[0])
 		return 1
 	}
 	filePath := os.Args[1]
@@ -401,7 +401,7 @@ func (l *Context) SaveImage(filePath string) (err error) {
 	defer w.Close()
 
 	// JPEGで出力(100%品質)
-	err = jpeg.Encode(w, img, &jpeg.Options{100})
+	err = jpeg.Encode(w, img, &jpeg.Options{Quality: 100})
 	return
 }
 
