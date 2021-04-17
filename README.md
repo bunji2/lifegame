@@ -19,10 +19,10 @@ C:\work>ls
 README.md  lifegame.exe  main.go  out.gif  photo.jpg  stage0.json
 ```
 
-input image
+input image = photo.jpg
 
 ![photo.jpg](photo.jpg)
 
-output image
+output image = out.gif
 
 ![out.gif](out.gif)
